@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    
+    <script src="Script.js" defer></script>
+    <title>Tic Tac Toe - Developed by Eni </title>
+</head>
+<body>
+    <div class="modal" id="startModal">
+        <div class="modal-content">
+            <h2>Start Game</h2>
+            <input type="text"  id="player1" placeholder="Player 1 Name">
+            <br>
+            <input type="text"  id="player2" placeholder="Player 2 Name">
+            <br>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <div class="game-container" id="game">
+        <div class="game-title">Tic Tac Toe</div>
+        <div class="player-info" id="playerDisplay"></div>
+        <div class="board" id="board"></div>
+    </div>
+
+    <div class="win-modal" id="winModal" style="display:none;">
+       <div class="win-modal-content">
+        <h2 id="resultMessage"></h2>
+        <button onclick="resetGame()">Play Again</button>
+        <button onclick="startFresh()">Start Afresh</button>
+       </div>
+    </div>
+ 
+
+    <footer>
+        Developed by Eni
+    </footer>
+
+</body>
+</html>
